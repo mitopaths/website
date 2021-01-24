@@ -1,0 +1,8 @@
+<Files "config.ini">
+Order Allow,Deny
+Deny from All
+</Files>
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ /index.php [QSA,L]

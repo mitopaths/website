@@ -1,0 +1,11 @@
+CREATE TABLE user(
+    id INT UNSIGNED AUTO_INCREMENT,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    affiliation TEXT NOT NULL,
+    role ENUM('simple', 'editor', 'admin') NOT NULL DEFAULT 'simple',
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    PRIMARY KEY(id)
+);
+CREATE INDEX user_email_index ON user(email);

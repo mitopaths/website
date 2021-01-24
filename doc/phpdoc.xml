@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<phpdoc>
+    <title>mitopatHs</title>
+    <parser>
+        <target>html</target>
+        <encoding>utf8</encoding>
+        <markers>
+            <item>TODO</item>
+            <item>FIXME</item>
+        </markers>
+        <extensions>
+            <extension>php</extension>
+        </extensions>
+        <visibility></visibility>
+    </parser>
+    <transformer>
+        <target>html</target>
+    </transformer>
+    <logging>
+        <level>warn</level>
+    </logging>
+    <transformations>
+        <template name="clean" />
+    </transformations>
+    <files>
+        <directory>../web/lib</directory>
+        <ignore>View/*</ignore>
+    </files>
+</phpdoc>

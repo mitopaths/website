@@ -1,0 +1,66 @@
+.main-logo {
+    display: block;
+    width: 80%;
+}
+
+.page {
+    display: block;
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+.highlight {
+    background: yellow;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.pathway-dynamic-view {
+    height: 600px;
+}
+
+.pathway-legend-container {
+    max-width: 360px;
+    position: absolute;
+    top: 10%;
+    left: 1em;
+    z-index: 100;
+    font-size: 0.75em;
+}
+
+.small-icon {
+    max-width: 5%;
+    float: right;
+}
+
+.biological-step {
+    cursor: pointer;
+    background-color: #FFF;
+    transition: 0.5s;
+}
+
+.biological-step:hover {
+    background-color: #DDF;
+}
+
+.biological-step-container {
+    list-style: none;
+    counter-reset: step-counter;
+}
+
+.biological-step {
+    counter-increment: step-counter;
+}
+
+.biological-step::before {
+    content: counter(step-counter) ". ";
+    font-weight: bold;
+}
+
+.biological-step:hover::before {
+    text-decoration: underline;
+}

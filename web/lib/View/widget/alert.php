@@ -1,0 +1,1 @@
+<div id="alert" class="alert d-none" role="alert" style="position: fixed; top: 5%; right: 5%; min-width: 50%; z-index: 9999"></div>
